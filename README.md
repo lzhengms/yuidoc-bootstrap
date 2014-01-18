@@ -4,8 +4,8 @@ A YUIDoc Theme Based on Twitter Bootstrap
 
 Getting Started
 ---------------
-1. Clone theme to your projects
-1. Run `npm install` in the theme root
+1. Clone theme into your projects directory
+1. Run `npm install` in the theme root directory
 
 Config YUIDoc
 -------------
@@ -24,10 +24,10 @@ Config YUIDoc
           // custom theme directory
           themedir: 'path/to/yuidoc-bootstrap'
         }
-      }      
+      }
     },
     ```
-    
+
 * With `yuidoc` command line, like this:
     ```
     yuidoc -t 'path/to/yuidoc-bootstrap' -H 'path/to/yuidoc-bootstrap/helpers/helpers.js'
