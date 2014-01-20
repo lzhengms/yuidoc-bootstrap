@@ -22,7 +22,7 @@
 
     {{#if foundAt}}
         <div class="foundat">
-            Defined in: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+            Defined in: <a href="{{foundAt}}">`{{file}}:{{line}}`</a>
         </div>
     {{/if}}
 
@@ -44,14 +44,14 @@
 {{/if}}
 
 <div class="moduledesc well well-small">
-    {{{moduleDescription}}}
+    {{moduleDescription}}
 </div>
 
 {{#example}}
     <div class="example">
         <h4>Example:</h4>
         <div class="example-content">
-            {{{.}}}
+            {{.}}
         </div>
     </div>
 {{/example}}
@@ -85,7 +85,7 @@
                     </a>
 
                     <div class="module-submodule-description">
-                        {{{description}}}
+                        {{description}}
                     </div>
                 </li>
             {{/subModules}}

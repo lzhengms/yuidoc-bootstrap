@@ -42,7 +42,7 @@
             {{/if}}
         {{/if}}
         {{#if foundAt}}
-        <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+        <a href="{{foundAt}}">`{{file}}:{{line}}`</a>
         {{/if}}
         </p>
 
@@ -56,7 +56,7 @@
     </div>
 
     <div class="description">
-        {{{propertyDescription}}}
+        {{propertyDescription}}
     </div>
 
     {{#if default}}
@@ -68,7 +68,7 @@
             <h4>Example:</h4>
 
             <div class="example-content">
-                {{{.}}}
+                {{.}}
             </div>
         </div>
     {{/example}}
@@ -89,7 +89,7 @@
                 {{/if}}
 
                 <div class="param-description">
-                    {{{description}}}
+                    {{description}}
                 </div>
 
                 {{#if subprops}}
@@ -106,7 +106,7 @@
                             {{/if}}
 
                             <div class="param-description">
-                                {{{description}}}
+                                {{description}}
                             </div>
                         </li>
                         {{/subprops}}
