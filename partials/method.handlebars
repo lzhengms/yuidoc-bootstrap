@@ -73,7 +73,7 @@
             {{/if}}
         {{/if}}
         {{#if foundAt}}
-        <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+        <a href="{{foundAt}}">`{{file}}:{{line}}`</a>
         {{/if}}
         </p>
 
@@ -88,7 +88,7 @@
     </div>
 
     <div class="description">
-        {{{methodDescription}}}
+        {{methodDescription}}
     </div>
 
     {{#if params}}
@@ -112,7 +112,7 @@
                     {{/if}}
 
                     <div class="param-description">
-                        {{{description}}}
+                        {{description}}
                     </div>
 
                     {{#if props}}
@@ -129,7 +129,7 @@
                                 {{/if}}
 
                                 <div class="param-description">
-                                    {{{description}}}
+                                    {{description}}
                                 </div>
 
                                 {{#if props}}
@@ -146,7 +146,7 @@
                                             {{/if}}
 
                                             <div class="param-description">
-                                                {{{description}}}
+                                                {{description}}
                                             </div>
                                         </li>
                                         {{/props}}
@@ -171,7 +171,7 @@
                     {{#if type}}
                         <span class="type">{{#crossLink type}}{{/crossLink}}</span>:
                     {{/if}}
-                    {{{description}}}
+                    {{description}}
                 {{else}}
                     {{#if type}}
                         <span class="type">{{#crossLink type}}{{/crossLink}}</span>:
@@ -186,7 +186,7 @@
             <h4>Example:</h4>
 
             <div class="example-content">
-                {{{.}}}
+                {{.}}
             </div>
         </div>
     {{/example}}

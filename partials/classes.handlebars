@@ -22,7 +22,7 @@
 
     {{#if foundAt}}
         <div class="foundat">
-            Defined in: <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+            Defined in: <a href="{{foundAt}}">`{{file}}:{{line}}`</a>
         </div>
     {{/if}}
 
@@ -53,7 +53,7 @@
 {{/if}}
 
 <div class="well well-small">
-    {{{classDescription}}}
+    {{classDescription}}
 </div>
 
 {{#is_constructor}}

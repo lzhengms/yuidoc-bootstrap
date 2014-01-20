@@ -4,11 +4,6 @@ A YUIDoc Theme Based on Twitter Bootstrap
 
 Getting Started
 ---------------
-1. Clone theme into your projects directory
-1. Run `npm install` in the theme root directory
-
-Config YUIDoc
--------------
 * With Grunt, Config your projects' `Gruntfile.js` like this:
     ```
     yuidoc: {
@@ -19,8 +14,6 @@ Config YUIDoc
         options: {
           paths: 'src/js',
           outdir: 'doc',
-          // custom theme helpers
-          helpers: ['path/to/yuidoc-bootstrap/helpers/helpers.js'],
           // custom theme directory
           themedir: 'path/to/yuidoc-bootstrap'
         }
@@ -30,12 +23,12 @@ Config YUIDoc
 
 * With `yuidoc` command line, like this:
     ```
-    yuidoc -t 'path/to/yuidoc-bootstrap' -H 'path/to/yuidoc-bootstrap/helpers/helpers.js'
+    yuidoc -t 'path/to/yuidoc-bootstrap'
     ```
 
-TODO
-----
-* Update to BT3
+History
+-------
+* 2014-01-19 - 0.4.0 - Update to BT3; Remove custom helpers; Remove searches
 
 Credits
 -------

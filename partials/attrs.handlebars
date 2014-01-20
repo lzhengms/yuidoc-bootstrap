@@ -55,7 +55,7 @@
             {{/if}}
         {{/if}}
         {{#if foundAt}}
-        <a href="{{foundAt}}">`{{{file}}}:{{{line}}}`</a>
+        <a href="{{foundAt}}">`{{file}}:{{line}}`</a>
         {{/if}}
         </p>
 
@@ -69,7 +69,7 @@
     </div>
 
     <div class="description">
-        {{{attrDescription}}}
+        {{attrDescription}}
     </div>
 
     {{#if default}}
@@ -81,7 +81,7 @@
             <h4>Fires event <code>{{name}}Change</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute `{{{name}}}` is
+            Fires when the value for the configuration attribute `{{name}}` is
             changed. You can listen for the event using the `on` method if you
             wish to be notified before the attribute's value has changed, or
             using the `after` method if you wish to be notified after the
@@ -134,7 +134,7 @@
             <h4>Example:</h4>
 
             <div class="example-content">
-                {{{.}}}
+                {{.}}
             </div>
         </div>
     {{/example}}
