@@ -7,6 +7,7 @@
 .content { padding: 0 20px 0 25px; }
 
 .sidebar {
+  margin-top: 3em;
   padding: 0 15px 0 10px;
 }
 
@@ -14,6 +15,10 @@
   padding: 7px 0 130px;
   position: relative;
   width: 99%;
+}
+
+.well {
+  background: none;
 }
 
 /* -- Table of Contents ----------------------------------------------------- */
@@ -325,10 +330,10 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 
 .apidocs .index-list {
   border-color: #efefef;
-  font-size: 12px;
+  /*font-size: 12px;*/
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 1em 1em;
   -moz-column-count: 4;
   -moz-column-gap: 10px;
   -moz-column-width: 170px;
@@ -366,6 +371,10 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 }
 
 /* -- Generic API item styles ----------------------------------------------- */
+.apidocs .off-left {
+  display: none;
+}
+
 .apidocs .args {
   display: inline;
   margin: 0 0.5em;
@@ -379,8 +388,8 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 
 .apidocs .item {
   border-bottom: 1px solid #efefef;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 1em;
+  margin: 1em 0;
 }
 
 .apidocs .item h4,
@@ -404,7 +413,13 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 
 .apidocs .item .name {
   display: inline;
-  font-size: 14px;
+}
+
+.apidocs .item .name code {
+  font-size: 120%;
+  font-weight: 300;
+  padding-left: 0;
+  background-color: transparent;
 }
 
 .apidocs .item .type,
@@ -454,8 +469,11 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 }
 
 /* -- Item "Returns" block -------------------------------------------------- */
-.apidocs .item .returns .type,
-.apidocs .item .returns .type a {
+.apidocs .item .returns {
+  margin: 1em 0 0 2em;
+}
+
+.apidocs .item .returns .type {
   font-size: 100%;
   margin: 0;
 }
