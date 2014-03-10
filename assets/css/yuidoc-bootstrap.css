@@ -383,7 +383,7 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 
 .apidocs .item {
   border-bottom: 1px solid #efefef;
-  padding: 1em;
+  padding: 1em 0;
   margin: 1em 0;
 }
 
