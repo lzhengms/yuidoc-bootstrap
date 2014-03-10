@@ -395,6 +395,10 @@ kbd .cmd { font-family: Monaco, Helvetica; }
   font-size: 100%;
 }
 
+.apidocs .item .description {
+  margin: 0 0 1em;
+}
+
 .apidocs .item .description p,
 .apidocs .item pre.code {
   margin: 1em 0 0;
@@ -464,7 +468,7 @@ kbd .cmd { font-family: Monaco, Helvetica; }
 }
 
 /* -- Item "Returns" block -------------------------------------------------- */
-.apidocs .item .returns {
+.apidocs .item .returns-description {
   margin: 1em 0 0 2em;
 }
 
